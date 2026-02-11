@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      background: #ffe6f0;
+      color: #d6336c;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    #yesBtn {
+      padding: 15px 30px;
+      font-size: 1.5em;
+      background-color: #ff4d94;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 50px;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 Chloe… 💌</h1>
+  <p>Will you be my Valentine?</p>
+  <button id="yesBtn">YES</button>
+
+  <script>
+    const btn = document.getElementById('yesBtn');
+    btn.addEventListener('mouseover', () => {
+      const x = Math.random() * 70 + "%";
+      const y = Math.random() * 70 + "%";
+      btn.style.position = "absolute";
+      btn.style.left = x;
+      btn.style.top = y;
+    });
+
+    btn.addEventListener('click', () => {
+      alert("💖 Yay! I love you! 💖");
+    });
+  </script>
+</body>
+</html>
